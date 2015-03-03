@@ -10,7 +10,7 @@
 
 Given an Array of strings, use `Array.prototype.reduce` to create an object that contains the number of times each string occured in the array. Return the object directly (no need to console.log).
 
-Create a `reduce` function that takes an array, startingVal, and iteratingFunction that calls itself recursively. 
+Create a `reduce` function that takes an array, startingVal, and iteratingFunction that calls itself recursively.
 
 Create the function `mapReduce` that returns a new array of values after calling the iterating function on each value of the original Array. mapReduce should call and use `Array.prototype.reduce`
 

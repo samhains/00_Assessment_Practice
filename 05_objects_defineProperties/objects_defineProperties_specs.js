@@ -5,11 +5,11 @@ describe("Mammal class", function() {
   });
 
   it("should take name in its constructor", function() {
-    expect(myMammal.name).toEqual("Joe");    
+    expect(myMammal.name).toEqual("Joe");
   });
 
-  it("should have an array called offspring", function() { 
-    expect(myMammal.offspring).toEqual([]);    
+  it("should have an array called offspring", function() {
+    expect(myMammal.offspring).toEqual([]);
   });
 
   it("should have used Object.defineProperties to add name and offspring", function(){
@@ -17,6 +17,7 @@ describe("Mammal class", function() {
   })
 
   it("should have a sayHello function", function() {
+
     expect(myMammal.sayHello()).toEqual("My name is Joe, I'm a Mammal");
   });
 
@@ -31,11 +32,11 @@ describe("Mammal class", function() {
 
 
 describe("Cat class", function() {
-  
+
   beforeEach(function() {
     spyOn(Mammal, 'call').and.callThrough();
     spyOn(Object, "defineProperty").and.callThrough();
-    cat = new Cat("Stewart", "Tabby"); 
+    cat = new Cat("Stewart", "Tabby");
   });
 
   // TEST FOR Mammal.call() in Cat, spy in beforeEach

@@ -1,5 +1,5 @@
 describe("reduce_function", function(){
-	
+
 
 
 	describe("countWords", function(){
@@ -19,7 +19,7 @@ describe("reduce_function", function(){
 				Recursion: 2,
 				HigherOrder:1,
 				Scope: 2,
-				Functional: 1 
+				Functional: 1
 			});
 		});
 
