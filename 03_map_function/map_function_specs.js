@@ -1,13 +1,13 @@
 describe("map function", function(){
 	var array;
-	
+
 	beforeEach(function(){
 		array = Array.prototype;
 	});
 
 	describe("tripleAllIterative", function(){
 
-		
+
 		it("returns an array", function(){
 			expect(tripleAllIterative([])).toEqual([]);
 		});
@@ -18,7 +18,7 @@ describe("map function", function(){
 
 		it("does not use Array.prototype.map", function(){
 			spyOn(array, "map");
-			
+
 			tripleAllIterative([1,2,3]);
 			expect(array.map.calls.count()).toEqual(0);
 		});

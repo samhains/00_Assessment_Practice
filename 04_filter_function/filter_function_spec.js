@@ -1,10 +1,10 @@
 describe("using Array.prototype.filter & Array.prototype.map", function(){
 	var array;
 	var messages;
-	
+
 	beforeEach(function(){
 		array = Array.prototype;
-		messages = 
+		messages =
 			[{message: "Lorem ipsum dolor sit amet, aenean elit, in risus morbi urna sit, lorem lobortis purus convallis maecenas"},
 			 {message: "Dictum urna, at sit rhoncus elit"},
 			 {message: "Cras lectus vestibulum elementum tellus, nibh aliquet sit facilisis"},
@@ -15,12 +15,12 @@ describe("using Array.prototype.filter & Array.prototype.map", function(){
 
 	describe("getMessages", function(){
 
-		it("returns all messages < 50 characters", function(){			
+		it("returns all messages < 50 characters", function(){
 			var returnArray = [
 				"Dictum urna, at sit rhoncus elit",
 				"Sed libero wisi, fermentum elit sed et."
 				];
-			expect(getMessages(messages)).toEqual(returnArray);	
+			expect(getMessages(messages)).toEqual(returnArray);
 		});
 
 		// How can you "method chain" and use map and filter together?
